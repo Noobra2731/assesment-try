@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Information Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+  <!--  Navbar -->
+  <nav class="bg-green-700 text-white p-4 fixed w-full z-10 top-0 left-0">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+
+      <!--  Logo -->
+      <a href="#" class="text-2xl font-bold">AgriHub</a>
+
+      <!--  Menu Button for Mobile -->
+      <button class="block md:hidden text-white focus:outline-none" id="menu-toggle">
+        <!-- Hamburger icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m0 6H4"></path>
+        </svg>
+      </button>
+
+      <!--  Navigation Links -->
+      <div class="w-full md:flex md:w-auto hidden" id="menu">
+        <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+          <li><a href="index.html" class="block py-2 px-3 bg-green-600 hover:bg-green-600 rounded">Home</a></li>
+          <li><a href="Farming_guides.html" class="block py-2 px-3 hover:bg-green-600 rounded">Farming Guides</a></li>
+          <li><a href="Crop_details.html" class="block py-2 px-3 hover:bg-green-600 rounded">Crop Details</a></li>
+          <li><a href="Pest_contorl.html" class="block py-2 px-3 hover:bg-green-600 rounded">Pest Control</a></li>
+          <li><a href="Contact.html" class="block py-2 px-3 hover:bg-green-600 rounded">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  Main Content Area -->
+    <!-- hero start  -->
+<div
+  class="hero min-h-screen"
+  style="background-image: url(https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-neutral-content text-center p-4 ">
+    <div class="max-w">
+      <h2 class="mb-5 text-5xl font-bold">Welcome to <b>Agricultural Information Hub</b>
+      </h2>
+      <p class="mb-5 text-2xl sm:text-lg">
+         your one-stop source for reliable farming knowledge and resources.
+       Here, you’ll find farming guides, detailed crop information, and effective pest control strategies designed to help farmers and agricultural enthusiasts improve productivity and sustainability.
+       Explore our sections to learn, grow, and connect with agricultural experts for better farming practices.
+      </p>
+      
+    </div>
+  </div>
+</div>
+
+    <!-- hero end  -->
+
+
+    <!-- carousel start -->
+
+<div class="flex justify-center">
+  <div class="carousel relative w-full max-w-5xl h-96 sm:h-56 my-8 rounded-lg shadow-lg overflow-hidden">
+    <div id="slide1" class="carousel-item relative w-full h-full">
+      <img
+        src="https://images.unsplash.com/photo-1627920769541-daa658ed6b59?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="object-cover w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full h-full">
+      <img
+        src="https://images.unsplash.com/photo-1483871788521-4f224a86e166?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="object-cover w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full h-full">
+      <img
+        src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="object-cover w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full h-full">
+      <img
+        src="https://images.unsplash.com/photo-1527847263472-aa5338d178b8?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="object-cover w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- carousel end -->
+
+
+<!-- Filter dropdown  -->
+<div class="flex justify-center mt-8 mb-4">
+  
+  <select id="card-filter" class="select select-bordered w-full max-w-xs">
+    <option value="all">All</option>
+    <option value="crop">Crop Information</option>
+    <option value="farming">Farming Guides</option>
+    <option value="pest">Pest Control</option>
+    <option value="weather">Weather Updates</option>
+    <option value="market">Market Prices</option>
+    <option value="expert">Expert Advice</option>
+  </select>
+</div>
+<!-- Filter dropdown end -->
+
+<!-- card section start -->
+<div id="card-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-4">
+  <div data-category="crop" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1691525504400-21faa66cd7b2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Crop Information" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Crop Information</h2>
+      <p>Find detailed guides and tips for growing healthy crops.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-category="farming" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://plus.unsplash.com/premium_photo-1664297210216-ddbdb9bb982e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Farming Guides" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Farming Guides</h2>
+      <p>Step-by-step guides for modern and traditional farming methods.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Explore</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-category="pest" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1581578017093-cd30fce4eeb7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Pest Control" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Pest Control</h2>
+      <p>Effective and eco-friendly pest management strategies.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">See Tips</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-category="weather" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1705077564892-4d0560b1f4a1?q=80&w=1409&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Weather Updates" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Weather Updates</h2>
+      <p>Stay updated with the latest weather forecasts for your region.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Check Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED: Only one data-category, and card-body is not nested inside another card -->
+  <div data-category="market" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1665525927909-6237de4532a8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D+"
+        alt="Market Prices" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Market Prices</h2>
+      <p>Get real-time updates on crop and produce prices.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">View Prices</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-category="expert" class="card bg-base-100 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <figure>
+      <img
+        src="https://plus.unsplash.com/premium_photo-1663039878530-66fe183c2a23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Expert Advice" class="h-48 w-full object-cover" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Expert Advice</h2>
+      <p>Connect with agricultural experts for personalized guidance.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Ask Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card section end -->
+
+
+
+
+<!-- footer start -->
+ <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+  <aside>
+    <p>Copyright ©- All right reserved by Anup</p>
+  </aside>
+</footer>
+<!-- footer end -->
+    <script src="main.js"></script>
+</body>
+</html>

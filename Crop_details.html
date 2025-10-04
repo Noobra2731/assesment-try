@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Information Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+  <!--  Navbar -->
+  <nav class="bg-green-700 text-white p-4 fixed w-full z-10 top-0 left-0">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+
+      <!--  Logo -->
+      <a href="#" class="text-2xl font-bold">AgriHub</a>
+
+      <!--  Menu Button for Mobile -->
+      <button class="block md:hidden text-white focus:outline-none" id="menu-toggle">
+        <!-- Hamburger icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m0 6H4"></path>
+        </svg>
+      </button>
+
+      <!--  Navigation Links -->
+      <div class="w-full md:flex md:w-auto hidden" id="menu">
+        <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+          <li><a href="index.html" class="block py-2 px-3  hover:bg-green-700 rounded">Home</a></li>
+          <li><a href="Farming_guides.html" class="block py-2 px-3 hover:bg-green-600 rounded">Farming Guides</a></li>
+          <li><a href="Crop_details.html" class="block py-2 px-3 bg-green-600 hover:bg-green-600 rounded">Crop Details</a></li>
+          <li><a href="Pest_contorl.html" class="block py-2 px-3 hover:bg-green-600 rounded">Pest Control</a></li>
+          <li><a href="Contact.html" class="block py-2 px-3 hover:bg-green-600 rounded">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  Main Content Area -->
+<!--top text start  -->
+<div class="mt-24 mb-8 text-center">
+  <h2 class="text-4xl mt-8 mb-6 font-bold mx-2 bg-lime-100 text-green-800 p-6 shadow-2xl hover:scale-95 transition-transform duration-400 ">Crop Details &amp; Cultivation Information</h2>
+  <p class="mt-12 text-lg text-lime-900">Explore comprehensive information about various crops, their growth requirements, and best cultivation practices.</p>
+</div>
+<!--top text end  -->
+<!-- card section start  -->
+<div class="grid grid-cols-1 mt-12 mb-16 sm:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+  <!-- Rice Card -->
+  <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+    <!-- Added rice image -->
+    <img src="https://plus.unsplash.com/premium_photo-1705338026411-00639520a438?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rice Field" class="w-full h-40 object-cover rounded mb-4">
+    <h3 class="text-2xl font-semibold text-green-800 mb-2">Rice</h3>
+    <p class="text-lime-900 mb-4">Rice is a staple food crop grown in warm, humid climates. It requires plenty of water and is typically cultivated in flooded fields called paddies.</p>
+    <ul class="list-disc list-inside text-green-700">
+      <li>Soil: Clayey, loamy soil</li>
+      <li>Water: High (flooded fields)</li>
+      <li>Season: Kharif (June–November)</li>
+    </ul>
+  </div>
+  <!-- Wheat Card -->
+  <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+    <!-- Added wheat image -->
+    <img src="https://images.unsplash.com/photo-1561978248-bffcdd0457ad?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wheat Field" class="w-full h-40 object-cover rounded mb-4">
+    <h3 class="text-2xl font-semibold text-green-800 mb-2">Wheat</h3>
+    <p class="text-lime-900 mb-4">Wheat is a major cereal crop grown in cooler climates. It is sown in winter and harvested in spring or early summer.</p>
+    <ul class="list-disc list-inside text-green-700">
+      <li>Soil: Well-drained loamy soil</li>
+      <li>Water: Moderate</li>
+      <li>Season: Rabi (October–March)</li>
+    </ul>
+  </div>
+  <!-- Maize Card -->
+  <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+    <!-- Added maize image -->
+    <img src="https://images.unsplash.com/photo-1649251037566-6881b4956615?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maize Field" class="w-full h-40 object-cover rounded mb-4">
+    <h3 class="text-2xl font-semibold text-green-800 mb-2">Maize</h3>
+    <p class="text-lime-900 mb-4">Maize, or corn, is a versatile crop used for food, fodder, and industrial products. It grows best in warm temperatures.</p>
+    <ul class="list-disc list-inside text-green-700">
+      <li>Soil: Fertile, well-drained soil</li>
+      <li>Water: Moderate</li>
+      <li>Season: Both Kharif and Rabi</li>
+    </ul>
+  </div>
+  <!-- Sugarcane Card -->
+  <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+    <!-- Added sugarcane image -->
+    <img src="https://images.unsplash.com/photo-1606707761801-0d68d6bdffdf?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sugarcane Field" class="w-full h-40 object-cover rounded mb-4">
+    <h3 class="text-2xl font-semibold text-green-800 mb-2">Sugarcane</h3>
+    <p class="text-lime-900 mb-4">Sugarcane is a tropical crop grown for sugar production. It requires a long, warm growing season and abundant water.</p>
+    <ul class="list-disc list-inside text-green-700">
+      <li>Soil: Deep, rich loamy soil</li>
+      <li>Water: High</li>
+      <li>Season: February–March (planting)</li>
+    </ul>
+  </div>
+</div>
+<!-- card section end -->
+
+<p class="text-center font-semibold text-lime-900 font-2xl mx-8 my-12 bg-lime-400 shadow-xl py-4 px-10">"Explore detailed crop information including varieties, cultivation methods, soil requirements, and harvesting techniques. Crops are presented under major categories such as grains, fruits, vegetables, and cash crops, with detailed profiles highlighting images, nutritional values, and potential uses." </p>
+<!-- footer start -->
+ <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+  <aside>
+    <p>Copyright ©- All right reserved by Anup</p>
+  </aside>
+</footer>
+<!-- footer end -->
+    <script src="main.js"></script>
+</body>
+</html>
